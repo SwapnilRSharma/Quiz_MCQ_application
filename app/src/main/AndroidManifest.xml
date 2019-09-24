@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.sharmas.managementmcq">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".startingPoint">
+            <intent-filter>
+                <action android:name="android.intent.action.STARTINGPOINT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAINACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".Chapter1" android:label="Chapter 1">
+            <intent-filter>
+                <action android:name="android.intent.action.QUIZACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".HighScoreCh1" android:label="Chapter 1">
+            <intent-filter>
+                <action android:name="android.intent.action.HIGHSCORECH1" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".About" android:label="About">
+            <intent-filter>
+                <action android:name="android.intent.action.ABOUT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Chapter2" android:label="Chapter 2">
+            <intent-filter>
+                <action android:name="android.intent.action.CHAPTER2" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Chapter3" android:label="Chapter 3">
+            <intent-filter>
+                <action android:name="android.intent.action.CHAPTER3" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ChapterP1">
+            <intent-filter>
+                <action android:name="android.intent.action.CHAPTERP1" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ChapterP2">
+            <intent-filter>
+                <action android:name="android.intent.action.CHAPTERP2" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ChapterP3">
+            <intent-filter>
+                <action android:name="android.intent.action.CHAPTERP3" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ChapterP4">
+            <intent-filter>
+                <action android:name="android.intent.action.CHAPTERP4" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Chapter4">
+            <intent-filter>
+                <action android:name="android.intent.action.CHAPTER4" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ChapterP5">
+            <intent-filter>
+                <action android:name="android.intent.action.CHAPTERP5" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Chapter5">
+            <intent-filter>
+                <action android:name="android.intent.action.CHAPTER5" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Chapter6">
+            <intent-filter>
+                <action android:name="android.intent.action.CHAPTER6" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ChapterP6">
+            <intent-filter>
+                <action android:name="android.intent.action.CHAPTERP6" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Chapter7">
+            <intent-filter>
+                <action android:name="android.intent.action.CHAPTER7" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ChapterP7">
+            <intent-filter>
+                <action android:name="android.intent.action.CHAPTERP7" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ChapterPList">
+            <intent-filter>
+                <action android:name="android.intent.action.CHAPTERPLIST" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".ChapterList">
+            <intent-filter>
+                <action android:name="android.intent.action.CHAPTERLIST" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>

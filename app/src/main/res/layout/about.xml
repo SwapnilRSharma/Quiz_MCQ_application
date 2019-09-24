@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    >
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:src="@mipmap/ic_launcher"
+        android:id="@+id/ivIcon"
+        android:layout_centerHorizontal="true"
+        />
+
+    <LinearLayout
+        android:layout_marginTop="125dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:textColor="#000"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="V 1.0"
+            android:gravity="center_horizontal"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="An Application Developed By"
+            android:textSize="20dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Swapnil Sharma"
+            android:gravity="center_horizontal"
+            android:textSize="25sp"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="60dp"
+            android:layout_marginTop="40dp"
+            >
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mail Us"
+                android:shadowColor="@color/colorPrimary"
+                android:textColor="#fff"
+                android:background="@color/colorAccent"
+                android:layout_alignParentLeft="true"
+                android:padding="10dp"
+                android:id="@+id/bContactUs"
+                android:onClick="onContactUs"
+                android:layout_marginRight="10dp"
+                />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rate Us"
+                android:textColor="#fff"
+                android:padding="10dp"
+                android:background="@color/colorAccent"
+                android:layout_alignParentRight="true"
+                android:id="@+id/bRateUs"
+                android:layout_marginLeft="10dp"
+                />
+
+        </RelativeLayout>
+
+        <Button
+
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Share"
+            android:background="@color/colorPrimary"
+            android:textColor="#fff"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/bWhatsapp"
+            android:onClick="onWA"
+            />
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

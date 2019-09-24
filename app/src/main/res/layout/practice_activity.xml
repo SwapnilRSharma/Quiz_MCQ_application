@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="8dp"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_margin="16dp"
+        >
+
+        <!--TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Score"
+            android:layout_alignParentLeft="true"
+            android:textSize="20sp"
+            android:id="@+id/score_text"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="20sp"
+            android:layout_alignParentRight="true"
+            android:id="@+id/score"
+            /-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Question Number:"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/score_text"
+            android:textSize="20sp"
+            android:id="@+id/tvQCText"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="20sp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/score"
+            android:id="@+id/tvQuestionCount"
+            />
+
+    </RelativeLayout>
+<ScrollView
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <TextView
+        android:id="@+id/question"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginBottom="10dp"
+        android:padding="8dp"
+        android:text="Question to be answered?"
+        android:textSize="20sp"
+
+        />
+    </LinearLayout>
+</ScrollView>
+    
+    <Button
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Option A"
+        android:background="@color/colorAccent"
+        android:textColor="#fff"
+        android:padding="8dp"
+        android:layout_margin="10dp"
+        android:id="@+id/choice1"
+        android:onClick="onChoice1"
+        />
+
+    <Button
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Option B"
+        android:background="@color/colorAccent"
+        android:textColor="#fff"
+        android:padding="8dp"
+        android:layout_margin="10dp"
+        android:id="@+id/choice2"
+        />
+
+    <Button
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Option C"
+        android:background="@color/colorAccent"
+        android:textColor="#fff"
+        android:padding="8dp"
+        android:layout_margin="10dp"
+        android:id="@+id/choice3"
+        />
+    <Button
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Option D"
+        android:background="@color/colorAccent"
+        android:textColor="#fff"
+        android:padding="8dp"
+        android:layout_margin="10dp"
+        android:id="@+id/choice4"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="100"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="20dp"
+
+        >
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Previous"
+            android:layout_weight="30"
+            android:background="@color/colorPrimaryDark"
+            android:textColor="#fff"
+            android:layout_marginRight="9dp"
+            android:id="@+id/btnPrevious"
+            android:onClick="onBtnPrevious"
+            />
+
+        <Button
+            android:layout_weight="30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quit"
+            android:textColor="#fff"
+            android:background="@color/colorPrimaryDark"
+            android:id="@+id/btnQuit"
+            android:onClick="onBtnQuit"
+            android:layout_marginRight="10dp"
+            />
+
+        <Button
+            android:layout_weight="30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Next"
+            android:background="@color/colorPrimaryDark"
+            android:textColor="#fff"
+            android:id="@+id/btnNext"
+            android:onClick="onBtnNext"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>
